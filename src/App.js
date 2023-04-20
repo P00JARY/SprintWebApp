@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import CreatePage from "./Pages/createPage";
+import {Route, Routes} from "react-router-dom";
+import OTPpage from "./Pages/OTPpage";
+import SuccessRegisteredPage from "./Pages/SuccessRegisteredPage";
+import KycVerificationPage from "./Pages/KYCVerificationPage";
+import Home from "./Pages/Home";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <>
+
+            <Routes>
+                <Route path={'/'} element={<CreatePage/>}/>
+                <Route path={'/otp'} element={<OTPpage/>}/>
+                <Route path={'/success'} element={<SuccessRegisteredPage/>}/>
+                <Route path={'/KYC'} element={<KycVerificationPage/>}/>
+                <Route path={'/home'} element={<Home/>}/>
+            </Routes>
+        </>
+
+
+
   );
 }
 
