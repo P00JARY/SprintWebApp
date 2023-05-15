@@ -1,0 +1,46 @@
+.head {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+.Box {
+  width: 500px;
+
+  background: #bedaef;
+  border-radius: 25px;
+  padding: 20px;
+}
+//.row{
+//  margin-top: 10px;
+//}
+
+.color-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 765px) {
+  .Box {
+    width: 100%;
+    background: #bedaef;
+    border-radius: 25px;
+  }
+  .row {
+    margin: 0;
+  }
+  .color-btn {
+    margin-top: 5px;
+  }
+  .head {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.consent-form-input {
+  height: 18px;
+  border: none;
+  border-bottom: 1px dotted #000;
+  outline: none;
+}

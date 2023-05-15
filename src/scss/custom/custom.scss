@@ -1,0 +1,155 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "/node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "../colors/colors.scss";
+@import "../typography/typography.scss";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "/node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+@import "~bootstrap/scss/maps";
+
+// 5. Include remainder of required parts
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "/node_modules/bootstrap/scss/utilities";
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/type";
+@import "/node_modules/bootstrap/scss/images";
+@import "/node_modules/bootstrap/scss/containers";
+@import "/node_modules/bootstrap/scss/grid";
+@import "/node_modules/bootstrap/scss/helpers";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/utilities/api";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/transitions";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "/node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+.text-dark {
+  color: $dark !important;
+}
+
+.active {
+  background-color: $white !important;
+  border-radius: 0.25rem 0rem 0rem 0.25rem !important;
+}
+
+.bg-accent {
+  background-color: $background-blue-accent !important;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+
+}
+
+td,
+th {
+  text-align: start;
+
+  .col p {
+    text-align: start;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e1e1e1 #f8f8f8;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.section-label {
+  color: $dark-grey;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.w-fit{
+  width: fit-content;
+}
+
+.modal-footer{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  background: white;
+  z-index: 10000;
+}
+
+.modal-header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: white;
+  z-index: 10000;
+}
+
+.img-preview{
+  height: 70px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-modal{
+  .form-check, .form-switch{
+    padding-left: 0 !important;
+  }
+}
+
+.add-project-doc{
+  width: 90px;
+  height: 90px;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  background: $light;
+  margin-top: 10px;
+  color: $dark-grey;
+  cursor: pointer;
+}

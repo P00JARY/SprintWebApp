@@ -1,0 +1,141 @@
+.main-nav {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+
+  li {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .push {
+    margin-right: auto;
+  }
+}
+
+.box {
+  position: absolute;
+  top: 45px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1;
+  ul {
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+  }
+  li:hover {
+    background: #ddd;
+  }
+  hr {
+    padding: 0;
+    margin: 0;
+  }
+}
+.CardContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+
+  .heading {
+    font-size: 20px;
+  }
+  .middletext {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .bottomtext {
+    margin-top: 10px;
+  }
+}
+
+.graphContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.investmentContainer {
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  h1 {
+    color: #470061;
+    font-weight: bold;
+  }
+  .SearchBar {
+    display: flex;
+    align-items: center;
+
+    input {
+      border-radius: 10px;
+      border-color: #470061;
+      width: 40%;
+      font-weight: bold;
+      font-size: larger;
+    }
+    .btn-container {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+    }
+    .btn-drop {
+      display: flex;
+      width: 200px;
+      background: white;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #470061;
+    }
+    .btn {
+      padding: 10px;
+      width: 200px;
+      border-radius: 20px;
+      font-weight: bold;
+      background: #470061;
+      color: white;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  th {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 765px) {
+  .CardContainer {
+    flex-direction: column;
+  }
+  .Card {
+    width: 100%;
+  }
+}

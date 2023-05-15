@@ -1,0 +1,138 @@
+// custom font family
+
+$font-family: "Poppins-Regular";
+$font-family-light: "Poppins-Light";
+$font-family-bold: "Poppins-Bold";
+$font-family-extra-bold: "Poppins-ExtraBold";
+$font-family-semibold: "Poppins-SemiBold";
+$font-family-medium: "Poppins-Medium";
+
+@font-face {
+    src: url("../../fonts/Poppins-Regular.ttf");
+    font-family: $font-family;
+}
+@font-face {
+    src: url("../../fonts/Poppins-Bold.ttf");
+    font-family: $font-family-bold;
+}
+@font-face {
+    src: url("../../fonts/Poppins-SemiBold.ttf");
+    font-family: $font-family-semibold;
+}
+@font-face {
+    src: url("../../fonts/Poppins-Medium.ttf");
+    font-family: $font-family-medium;
+}
+@font-face {
+    src: url("../../fonts/Poppins-Light.ttf");
+    font-family: $font-family-light;
+}
+@font-face {
+    src: url("../../fonts/Poppins-ExtraBold.ttf");
+    font-family: $font-family-extra-bold;
+}
+$f8: 8px;
+$f10: 10px;
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;
+$f18: 18px;
+$f20: 20px;
+$f24: 24px;
+$f32: 32px;
+$f36: 36px;
+$f48: 48px;
+
+$fw-medium: 500;
+$fw-light: 300;
+$fw-bold: 700;
+$fw-regular: 400;
+$fw-semibold: 600;
+
+.fs-small-regular{
+    font-size: $f10 !important;
+    font-family:$font-family !important;
+}
+
+.fs-small-semibold{
+    font-size: $f10 !important;
+    font-family: $font-family-semibold !important;
+}
+
+.fs-small-medium{
+    font-size: $f10 !important;
+    font-family:$font-family-medium !important;
+}
+
+.fs-normal-regular{
+    font-size: $f12 !important;
+    font-family:$font-family !important;
+}
+
+.fs-normal-semibold{
+    font-size: $f12 !important;
+    font-family: $font-family-semibold !important;
+}
+
+.fs-normal-medium{
+    font-size: $f12 !important;
+    font-family:$font-family-medium !important;
+}
+
+.fs-med-regular{
+    font-size: $f14 !important;
+    font-family:$font-family !important;
+}
+
+.fs-med-semibold{
+    font-size: $f14 !important;
+    font-family: $font-family-semibold !important;
+}
+
+.fs-med-medium{
+    font-size: $f14 !important;
+    font-family:$font-family-medium !important;
+}
+
+
+.fs-large-regular{
+    font-size: $f16 !important;
+    font-family:$font-family !important;
+}
+
+.fs-large-semibold{
+    font-size: $f16 !important;
+    font-family: $font-family-semibold !important;
+}
+
+.fs-large-medium{
+    font-size: $f16 !important;
+    font-family:$font-family-medium !important;
+}
+
+
+.fs-x-large-regular{
+    font-size: $f18 !important;
+    font-family: $font-family !important;
+}
+
+.fs-x-large-semibold{
+    font-size: $f18 !important;
+    font-family: $font-family-semibold !important;
+}
+
+.fs-x-large-medium{
+    font-size: $f18 !important;
+    font-family: $font-family-medium !important;
+}
+
+.fs-x-large-bold{
+    font-size: $f18 !important;
+    font-family: $font-family-bold !important;
+}
+
+
+.fs-title-semibold{
+    font-size: $f24 !important;
+    font-family: $font-family-semibold !important;
+}

@@ -1,28 +1,19 @@
-import CreatePage from "./Pages/createPage";
-import {Route, Routes} from "react-router-dom";
-import OTPpage from "./Pages/OTPpage";
-import SuccessRegisteredPage from "./Pages/SuccessRegisteredPage";
-import KycVerificationPage from "./Pages/KYCVerificationPage";
-import Home from "./Pages/Home";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import RouteCombiner from "./Routes/userRoutes/RouteCombiner";
+import Routes from "./Routes/Routes";
 
 
 function App() {
   return (
-        <>
-
-            <Routes>
-                <Route path={'/'} element={<CreatePage/>}/>
-                <Route path={'/otp'} element={<OTPpage/>}/>
-                <Route path={'/success'} element={<SuccessRegisteredPage/>}/>
-                <Route path={'/KYC'} element={<KycVerificationPage/>}/>
-                <Route path={'/home'} element={<Home/>}/>
-            </Routes>
-        </>
-
-
-
+    <>
+      <div>
+        <Router>
+          <RouteCombiner
+            routes={Routes}
+          />
+        </Router>
+      </div>
+    </>
   );
 }
-
 export default App;
